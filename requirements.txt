@@ -1,5 +1,6 @@
-flask
+streamlit
 ultralytics
 torch
-torchvision
 Pillow
+numpy
+opencv-python-headless
