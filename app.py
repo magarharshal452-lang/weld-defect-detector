@@ -1,5 +1,14 @@
-# Ensure these match your uploaded file names exactly
-yolo_model = YOLO("best.pt") 
+import streamlit as st
+from PIL import Image
+import torch
+from ultralytics import YOLO
+import numpy as np
 
-# And for the autoencoder:
+# Load YOLO
+yolo_model = YOLO("best.pt")
+
+# ... (rest of your Autoencoder class) ...
+
+autoencoder = Autoencoder()
 autoencoder.load_state_dict(torch.load("autoencoder.pth", map_location="cpu"))
+autoencoder.eval()
